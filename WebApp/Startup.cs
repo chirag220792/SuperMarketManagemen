@@ -31,7 +31,8 @@ namespace WebApp
             services.AddScoped<ICategoryRepository, CategoryInMemoryRepository>();
 
             //Depebdebcy Injection for Use Cases and Repositories
-            services.AddTransient<IViewCategoriesUseCase, ViewCategoriesUseCase>();  
+            services.AddTransient<IViewCategoriesUseCase, ViewCategoriesUseCase>();
+            services.AddTransient<IAddCategoryUseCase, AddCategoryUseCase>();
 
         }
 
